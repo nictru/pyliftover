@@ -43,7 +43,7 @@ def open_liftover_chain_file(from_db, to_db, search_dir='.', cache_dir=os.path.e
      3. Otherwise, checks whether ``<cache_dir>/<from_db>To<to_db>.over.chain.gz`` exists.
         This step may be disabled by specifying cache_dir = None.
      4. If file still not found attempts to download the file from the URL
-        'http://hgdownload.cse.ucsc.edu/goldenPath/<from_db>/liftOver/<from_db>To<to_db>.over.chain.gz'
+        'https://hgdownload.cse.ucsc.edu/goldenPath/<from_db>/liftOver/<from_db>To<to_db>.over.chain.gz'
         to a temporary location. This step may be disabled by specifying use_web=False. In this case the operation fails and 
         the function returns None.
      5. At this point, if write_cache=True and cache_dir is not None and writable, the file is copied to cache_dir and opened from there.
